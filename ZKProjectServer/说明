@@ -1,0 +1,5 @@
+1.此文件一定要和上面的文件一起使用：ZKProjectClient
+2.这是运行在服务端的程序，首先要确保要运行的服务端已经安装了jdk，同时，已经开启了zookeeper 服务
+3.修改【ServerListener】类的第17 行，对应到指定要监听的 开启的zookeeper 的ip
+4.因为增加了认证得控制，所以此时也应该修改【ServerListener】19行  认证的用户姓名
+5.然后将此文件导出为可执行jar文件，然后直接在命令行界面使用    java -jar 【jar包文件】 [自定义的zookeeper服务的名字]
